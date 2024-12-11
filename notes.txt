@@ -1,0 +1,76 @@
+
+CSS Basics Notes (Step by Step)
+______________________________________
+---------------
+1. what is CSS?
+---------------
+Ans: It is Cascading Style sheet use for style html pages Or web pages . its purpose is to decorate webpages 
+_______________________________________
+----------------
+2. Types of CSS?
+-----------------
+
+Ans: There are three types of CSS as:
+     i. Inline CSS (first periority)
+     ii. Internal Page CSS ( second Periority)
+     ii. External Page CSS (third Periority)
+
+
+i.Inline CSS: Directly written inside the HTML element.
+    Example:
+    <p style="color: blue;">This is blue text.</p>
+
+ii.Internal CSS: Written inside a <style> tag in the <head> section.
+
+     <style>
+         p {
+            color: green;
+           }
+     </style>
+ P is selector here
+
+iii.External CSS: Written in an external file and linked using <link> in head tag.  
+    
+    <link rel="stylesheet" href="path of css file">
+
+_______________________________________________
+---------------------
+3. CSS Syntax 
+----------------------
+i. CSS consists of rulesets that target HTML elements. A CSS rule has three main parts:
+   
+    selector {
+              property: value;
+              }
+ Example :
+
+    h1 {
+        color:'red';
+    }       
+
+ii. Selector: Targets the HTML element (e.g., h1, .class, #id).
+ All Selector in CSS 
+ List of All Types of Selectors in CSS
+
+1. Universal Selector: `*`
+2. Type Selector: `element`
+3. Class Selector: `.classname`
+4. ID Selector: `#idname`
+5. Group Selector: `selector1, selector2`
+6. Descendant Selector: `ancestor descendant`
+7. Child Selector: `parent > child`
+8. Adjacent Sibling Selector: `element1 + element2`
+9. General Sibling Selector: `element1 ~ element2`
+10. Attribute Selector:
+    - `[attribute]`
+    - `[attribute=value]`
+    - `[attribute~=value]`
+    - `[attribute|=value]`
+    - `[attribute^=value]`
+    - `[attribute$=value]`
+    - `[attribute*=value]`
+11. Pseudo-classes: `:hover`, `:focus`, `:nth-child()`, `:nth-of-type()`, `:first-child`, `:last-child`, etc.
+12. Pseudo-elements: `::before`, `::after`, `::first-letter`, `::first-line`
+13. Negation Selector: `:not(selector)`
+
+
