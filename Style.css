@@ -4,11 +4,14 @@
     box-sizing: border-box;
     padding:0px;margin:0px;
 }
+html{font-size: 10px;}
+
 h1{
     margin-top: 50px;
     text-align:center;
     text-decoration:blink;
     letter-spacing: 10px;
+
 }
 p{color:green;
 text-align:justify;

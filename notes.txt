@@ -74,3 +74,52 @@ ii. Selector: Targets the HTML element (e.g., h1, .class, #id).
 13. Negation Selector: `:not(selector)`
 
 
+CSS units are measurements used to specify lengths, sizes, or positioning in a webpage's design. These units are used for properties like width, height, margin, padding, font-size, and more. CSS units fall into two main categories:
+
+---
+
+## 1. **Absolute Units**
+These are fixed and do not change with the viewport or parent element. They are best used when precise measurements are required.
+
+### **Common Absolute Units**
+- **px (Pixels)**: Represents one dot on the screen. It is the most common unit for web design.
+- **in (Inches)**: 1 inch = 96 pixels.
+- **cm (Centimeters)**: 1 cm = 37.8 pixels.
+- **mm (Millimeters)**: 1 mm = 3.78 pixels.
+- **pt (Points)**: 1 pt = 1/72 of an inch = 1.33 pixels.
+- **pc (Picas)**: 1 pc = 12 points = 16 pixels.
+
+---
+
+## 2. **Relative Units**
+These are based on the size of other elements or the viewport. They are flexible and adapt to changes, making them great for responsive design.
+
+### **Common Relative Units**
+- **% (Percentage)**: Relative to the parent element's size.
+  - Example: `width: 50%;` makes the width half the size of the parent.
+
+- **em**: Relative to the font size of the parent element.
+  - Example: If the parent font size is `16px`, then `2em` equals `32px`.
+
+- **rem (Root em)**: Relative to the root element's font size (`<html>` tag).
+  - Example: If the root font size is `16px`, `1rem` equals `16px` throughout the document.
+
+- **vw (Viewport Width)**: 1vw = 1% of the viewport's width.
+- **vh (Viewport Height)**: 1vh = 1% of the viewport's height.
+- **vmin**: 1vmin = 1% of the smaller dimension (width or height).
+- **vmax**: 1vmax = 1% of the larger dimension.
+
+- **ch (Character Unit)**: Width of the "0" character in the current font.
+- **ex (x-height)**: Height of the lowercase "x" in the current font.
+
+---
+
+---
+
+### **Key Considerations**
+1. Use relative units (`%, em, rem, vw, vh`) for responsive design.
+2. Use `px` for precise and fixed layouts, like borders or specific elements.
+3. Use `fr` and `calc()` in modern layouts for greater flexibility.
+4. Ensure accessibility by considering base font sizes when using `rem` or `em`.
+
+If you have specific use cases or questions, let me know!
